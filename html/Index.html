@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Wips City</title>
+    <link rel="icon" type="image/png" href="../images/Aimez_la_Nature2.png"/>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+
+<!----------    HEADER    ---------->
+
+    <div id="header"></div>
+
+
+<!----------    PHOTOS  ---------->
+
+<div class="photos">
+    <div>
+        <img src="../images/WIPS_CITY_banner.png" alt="Logo Wips" class="banner">
+    </div>
+    <div>
+        <img src="../images/wipscity_noir.png" alt="Logo Wips" class="welcome">
+    </div>
+    <div>
+        <img src="../images/Groupe_3663.png" alt="Logo Wips" class="intro">
+    </div>
+</div>
+
+
+<!----------    MAP  ---------->
+
+
+    <div class="MapHitBox" id="map"></div>
+
+
+<!----------    FOOTER  ---------->
+
+<!-- Permet de load le Header sur l'Index -->
+<script>$("#header").load('Header.html');</script>
+
+<!-- Permet de load la Map sur l'Index -->
+<script>$("#map").load('Map.html');</script>
+
+<!-- Les fonctions JS -->
+<script src="../js/index.js"></script>
+
+</body>
+</html>

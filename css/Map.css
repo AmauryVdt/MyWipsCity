@@ -1,0 +1,134 @@
+body{
+    height: 3000px;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    padding-bottom: 3%;
+}
+
+#ground{
+    height: 500px;
+    line-height: 100px;
+    position: absolute;
+    text-align: center;
+    width: 500px;
+    transform: rotate(-45deg) skew(15deg, 15deg);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: rgb(62, 177, 62);
+}
+
+#ground-left{
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    bottom: -509px;
+    background: rgb(92, 255, 74);
+    transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+}
+
+#ground-right{
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    bottom: -509px;
+    background: rgb(168, 255, 168);
+    transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+    margin-top: -50px;
+}
+
+#tile-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+.tile{
+    margin: auto;
+    width: 130px;
+    height: 130px;
+    border: 1px dashed white;
+    border-radius: 15px;
+}
+
+#holder{
+    border: 3px solid lightgreen;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    height: 200px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.separateur{
+    border: 0.5px solid black;
+    width: 10%;
+    transform: rotate(90deg);
+}
+
+.fa-trash-alt{
+    margin: auto;
+    color: darkgreen;
+}
+
+#trashBloc{
+    border: 3px solid lightgreen;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    height: 200px;
+    width: 10%;
+    left: 5%;
+    right: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bloc{
+    margin: auto;
+}
+
+.dragdown
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 2px;
+    width: 80%;
+    border-radius: 50px;
+}
+
+#container2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+}
+
+.game__title {
+    font-family: Montserrat;
+    font-size: 250%;
+}
