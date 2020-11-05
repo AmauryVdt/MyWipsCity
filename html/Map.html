@@ -1,7 +1,6 @@
 <script src="../js/Map.js"></script>
-<script src="../js/modal.js"></script>
 <link rel="stylesheet" href="../css/Map.css">
-<link rel="stylesheet" href="../css/modal.css">
+
 <div class="dragdown">
 
     <div style="display: flex; flex-direction: row; width: 100%;">
@@ -11,9 +10,6 @@
         <div style="display: flex; flex-direction: row; width:30%; margin-left: 15%; font-family: 'Montserrat', serif; font-weight: bold">
             <h3>Score : </h3>
             <h3 id="score">&nbsp 0</h3>
-        </div>
-        <div onclick="window.location.reload();" style="display: flex; flex-direction: row; margin-top: 1%; width:10%;">
-            <img style="width: 2vw; height: 4.25vh;" src="../images/Icon__refresh.png">
         </div>
     </div>
 
@@ -42,7 +38,6 @@
         <div id="holder">
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div  class="bloc" id="commerce">
                 <img class="caroussel" id="commercePicture0" src="../images/magasin.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
@@ -64,7 +59,7 @@
             </div>
             <hr class="separateur">
             <div class="bloc" id="ecole">
-                <img class="caroussel" id="ecolePicture0" src="../images/ecole.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="ecolePicture0" src="../images/ecole.png"draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="industrie">
@@ -79,43 +74,6 @@
                 <img class="caroussel" id="parcPicture0" src="../images/parc.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
         </div>
-        <button id="btnModal" class="btnModal"> <h5>Fin de la partie</h5></button>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span id="btnClose" class="btnClose">&times;</span>
-                <div style="display: flex; flex-direction: row; margin-left: 40%">
-                    <h3>Partie terminée !</h3>
-                </div>
-            <div style="display: flex; flex-direction: row; width:50%; margin-left: 10%">
-                <h5>Tu peux maintenant partager ton score à tes amis :</h5>
-            </div>
-            <div class="container">
-                    <form>
-                        <div class="form-group">
-                            <label for="userScore">Ton Score :</label>
-                            <input type="text" class="form-control" id="userScore" placeholder=0>
-                        </div>
-                        <div class="form-group">
-                            <label for="userName">Ton nom :</label>
-                            <input type="text" class="form-control" id="userName" placeholder="Entrer votre nom">
-                        </div>
-                        <button  onclick="setScore(document.getElementById('userName').value)" class="btn btn-primary">Envoyer</button>
-                        <div style=" width:70%; margin-left: 87%">
-                            <!-- Facebook -->
-                            <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer.php?u=https://tontonduweb.com/previews-warc/genieCivil/article1.html" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"><img src="../images/logo-facebook.png" alt="Facebook" width="4.8%" /></a>
-                            <!-- //Facebook -->
-
-                            <!-- Twitter -->
-                            <a target="_blank" title="Twitter" href="https://twitter.com/share?url=http://localhost:63342/MyWipsCity/html/Index.html?_ijt=oji8uselumc71cqsl6o5kfdv4n" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"><img src="../images/logo-twitter.png" alt="Twitter" width="5%"/></a>
-                            <!-- //Twitter -->
-
-                            <!-- Instagram -->
-                            <a target="_blank" title="Instagram" href="https://www.instagram.com/accounts/login/" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"><img src="../images/logo-instagram.png" alt="instagram" width="5%"/></a>
-                            <!-- //Twitter -->
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
+
