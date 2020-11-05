@@ -60,7 +60,7 @@ function addPicture() {
 
         const div = document.getElementById("commerce");
         div.appendChild(img);
-        countCommercePicture++;
+        countCommercePicture = countCommercePicture + 1;
     }
     else if (document.getElementById("maison").childElementCount < 1) {
         const img = document.createElement("img");
@@ -73,20 +73,7 @@ function addPicture() {
 
         const div = document.getElementById("maison");
         div.appendChild(img);
-        countMaisonPicture++;
-    }
-    else if (document.getElementById("appartement").childElementCount < 1) {
-        const img = document.createElement("img");
-        img.id = `maisonAppartement${countAppartementPicture}`;
-        img.src = "../images/immeuble.png";
-        img.draggable = "true";
-        img.width="150";
-        img.height="150";
-        this.addEventListener('dragstart', function() {drag(event)}, false);
-
-        const div = document.getElementById("appartement");
-        div.appendChild(img);
-        countAppartementPicture++;
+        countMaisonPicture = countMaisonPicture + 1;
     }
     else if (document.getElementById("eoliene").childElementCount < 1) {
         const img = document.createElement("img");
@@ -99,7 +86,7 @@ function addPicture() {
 
         const div = document.getElementById("eoliene");
         div.appendChild(img);
-        countEolienePicture++;
+        countEolienePicture = countEolienePicture + 1;
     }
     else if (document.getElementById("hydraulique").childElementCount < 1) {
         const img = document.createElement("img");
@@ -112,7 +99,7 @@ function addPicture() {
 
         const div = document.getElementById("hydraulique");
         div.appendChild(img);
-        countHydrauliquePicture++;
+        countHydrauliquePicture = countHydrauliquePicture + 1;
     }
     else if (document.getElementById("solaire").childElementCount < 1) {
         const img = document.createElement("img");
@@ -125,7 +112,7 @@ function addPicture() {
 
         const div = document.getElementById("solaire");
         div.appendChild(img);
-        countSolairePicture++;
+        countSolairePicture = countSolairePicture + 1;
     }
     else if (document.getElementById("ecole").childElementCount < 1) {
         const img = document.createElement("img");
@@ -138,7 +125,7 @@ function addPicture() {
 
         const div = document.getElementById("ecole");
         div.appendChild(img);
-        countEcolePicture++;
+        countEcolePicture = countEcolePicture + 1;
     }
     else if (document.getElementById("industrie").childElementCount < 1) {
         const img = document.createElement("img");
@@ -151,12 +138,12 @@ function addPicture() {
 
         const div = document.getElementById("industrie");
         div.appendChild(img);
-        countIndustriePicture++;
+        countIndustriePicture = countIndustriePicture + 1;
     }
     else if (document.getElementById("lac").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonLac${countLacPicture}`;
-        img.src = "../images/usine.png";
+        img.src = "../images/Groupe%207365.png";
         img.draggable = "true";
         img.width="150";
         img.height="150";
@@ -164,7 +151,7 @@ function addPicture() {
 
         const div = document.getElementById("lac");
         div.appendChild(img);
-        countLacPicture++;
+        countLacPicture = countLacPicture + 1;
     }
     else if (document.getElementById("parc").childElementCount < 1) {
         const img = document.createElement("img");
@@ -177,6 +164,6 @@ function addPicture() {
 
         const div = document.getElementById("parc");
         div.appendChild(img);
-        countParPicture++;
+        countParcPicture = countParcPicture + 1;
     }
 }

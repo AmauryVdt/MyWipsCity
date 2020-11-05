@@ -1,6 +1,13 @@
 <link rel="stylesheet" href="../css/Header.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+<div id="menu">
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+</div>
+
 <div class=header>
     <div class=headerContent>
         <span onclick="document.getElementById('menu').classList.toggle('show')">Menu <i class="fas fa-bars"></i></span>
@@ -9,9 +16,14 @@
     </div>
 </div>
 
-<div id="menu">
-    <a href="">1</a>
-    <a href="">2</a>
-    <a href="">3</a>
-    <a href="">4</a>
-</div>
+<script>
+document.querySelectorAll('a[href^="#map"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+        });
+    });
+});
+</script>

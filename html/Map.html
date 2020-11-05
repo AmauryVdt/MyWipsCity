@@ -1,16 +1,15 @@
 <script src="../js/Map.js"></script>
-<script src="../js/modal.js"></script>
 <link rel="stylesheet" href="../css/Map.css">
-<link rel="stylesheet" href="../css/modal.css">
+
 <div class="dragdown">
 
     <div style="display: flex; flex-direction: row; width: 100%;">
         <div style="display: flex; justify-content: flex-end; width:70%;">
             <h1 style="font-family: 'Montserrat', serif">Créer ta Wips City</h1>
         </div>
-        <div style="display: flex; flex-direction: row; width:30%; margin-left: 15%">
+        <div style="display: flex; flex-direction: row; width:30%; margin-left: 15%; font-family: 'Montserrat', serif; font-weight: bold">
             <h3>Score : </h3>
-            <h3 id="score">0</h3>
+            <h3 id="score">&nbsp 0</h3>
         </div>
     </div>
 
@@ -37,16 +36,15 @@
             <i class="fas fa-trash-alt fa-4x" id="trash" ondrop="drop(event)" ondragover="allowDrop(event)"></i>
         </div>
         <div id="holder">
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div  class="bloc" id="commerce">
                 <img class="caroussel" id="commercePicture0" src="../images/magasin.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="maison">
                 <img class="caroussel" id="maisonPicture0" src="../images/maison.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
-            </div>
-            <hr class="separateur">
-            <div class="bloc" id="appartement">
-                <img class="caroussel" id="appartementPicture0" src="../images/immeuble.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="eoliene">
@@ -70,19 +68,13 @@
             </div>
             <hr class="separateur">
             <div class="bloc" id="lac">
-                <img class="caroussel" id="lacPicture0" src="../images/usine.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="lacPicture0" src="../images/Groupe%207365.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="parc">
                 <img class="caroussel" id="parcPicture0" src="../images/parc.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
         </div>
-        <button id="btnPopup" class="btnPopup">Fin de la partie</button>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                    <span id="btnClose" class="btnClose">&times;</span>
-                    <p>Votre score est de</p>
-            </div>
-        </div>
     </div>
 </div>
+
