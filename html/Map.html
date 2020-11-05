@@ -1,6 +1,18 @@
 <script src="../js/Map.js"></script>
 <link rel="stylesheet" href="../css/Map.css">
+
 <div class="dragdown">
+
+    <div style="display: flex; flex-direction: row; width: 100%;">
+        <div style="display: flex; justify-content: flex-end; width:70%;">
+            <h1 style="font-family: 'Montserrat', serif">Créer ta Wips City</h1>
+        </div>
+        <div style="display: flex; flex-direction: row; width:30%; margin-left: 15%">
+            <h3>Score : </h3>
+            <h3 id="score">0</h3>
+        </div>
+    </div>
+
     <div id="container">
         <div id="ground-left">&nbsp;</div>
         <div id="ground">
@@ -21,7 +33,7 @@
 
     <div id="container2">
         <div id="trashBloc">
-            <i class="fas fa-trash-alt fa-8x" id="trash" ondrop="drop(event)" ondragover="allowDrop(event)"></i>
+            <i class="fas fa-trash-alt fa-4x" id="trash" ondrop="drop(event)" ondragover="allowDrop(event)"></i>
         </div>
         <div id="holder">
             <div  class="bloc" id="commerce">
@@ -66,3 +78,4 @@
         </div>
     </div>
 </div>
+
