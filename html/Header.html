@@ -1,29 +1,20 @@
+<script src="../js/Header.js"></script>
 <link rel="stylesheet" href="../css/Header.css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <div id="menu">
-    <a href="">1</a>
-    <a href="">2</a>
-    <a href="">3</a>
-    <a href="">4</a>
+    <a href="#welcome">Bienvenue à Wips City</a>
+    <a href="#intro">Wips City c'est quoi ?</a>
+    <a href="#map">Crée ta Wips City</a>
+    <a href="#leaderboard">Tableau des scores</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.demainlaville.com/transition-ecologique-penser-la-ville-comme-un-systeme-vivant/">Site DemainLaVille</a>
 </div>
 
 <div class=header>
     <div class=headerContent>
-        <span onclick="document.getElementById('menu').classList.toggle('show')">Menu <i class="fas fa-bars"></i></span>
-        <span>Wips City</span>
+        <span onclick="document.getElementById('menu').classList.toggle('show'); changeIcon()">Menu <i id="menu__icon" class="fas fa-bars"></i></span>
+        <span class="title">Wips City</span>
         <span><a href="#map">Jouer</a></span>
     </div>
 </div>
-
-<script>
-document.querySelectorAll('a[href^="#map"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-        });
-    });
-});
-</script>

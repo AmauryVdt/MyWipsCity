@@ -7,16 +7,6 @@ async function myFunction() {
     console.log()
 }
 
-function setScore(name) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", 'http://localhost:8080', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({
-        user: name,
-        score: randomScore.toString()
-    }));
-}
-
 new Vue({
     el: '#app',
     data: {

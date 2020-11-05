@@ -23,10 +23,10 @@
         <img src="../images/WIPS_CITY_banner.png" alt="Logo Wips" class="banner">
     </div>
     <div>
-        <img src="../images/wipscity_noir.png" alt="Logo Wips" class="welcome">
+        <img id="welcome" src="../images/wipscity_noir.png" alt="Logo Wips" class="welcome">
     </div>
     <div>
-        <img src="../images/Groupe_3663.png" alt="Logo Wips" class="intro">
+        <img id="intro" src="../images/Groupe_3663.png" alt="Logo Wips" class="intro">
     </div>
 </div>
 
@@ -39,7 +39,7 @@
 
 <!----------    ScoreBoard  ---------->
 
-<h2 style="margin-top: 5%;font-family: 'Montserrat', serif">Voici le tableau des scores !</h2>
+<h2 id="leaderboard" style="margin-top: 5%;font-family: 'Montserrat', serif">Voici le tableau des scores !</h2>
 <div style="margin-top: 2%; margin-bottom: 2%" class="container">
     <table id="app" class="table">
         <thead>
@@ -62,7 +62,7 @@
 
 <!----------    FOOTER  ---------->
 
-<div style="display: flex; justify-content: center; width: 100%; background-color: dimgrey">
+<div id="contact" style="display: flex; justify-content: center; width: 100%; background-color: #333333; margin-top: 5%; color: white">
     <!--Section: Contact v.2-->
     <section class="mb-4">
 
@@ -131,7 +131,7 @@
                 </form>
 
                 <div class="text-center text-md-left">
-                    <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Envoyer</a>
+                    <a class="btn btn-outline-light" onclick="document.getElementById('contact-form').submit();">Envoyer</a>
                 </div>
                 <div class="status"></div>
             </div>
