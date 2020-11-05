@@ -1,8 +1,4 @@
 var randomScore = "";
-window.onload = function setRandomScore() {
-    randomScore = Math.floor(Math.random() * 100) + 1;
-    document.getElementById("userScore").placeholder = randomScore;
-}
 
 const scoreboard = [];
 async function myFunction() {

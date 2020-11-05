@@ -27,13 +27,14 @@ function drop(ev) {
     if (ev.target === document.getElementById("trash")) {
         var img = document.getElementById(data);
         img.parentNode.removeChild(img);
-
     }
     updateScore();
 }
 
 function updateScore() {
     document.getElementById("score").innerText = this.countDrag;
+    document.getElementById("userScore").placeholder = this.countDrag;
+
 }
 
 // Merci de ne pas juger le code à partir d'ici, j'avais la flemme de faire un beau code
@@ -177,6 +178,6 @@ function addPicture() {
 
         const div = document.getElementById("parc");
         div.appendChild(img);
-        countParPicture++;
+        countParcPicture++;
     }
 }
