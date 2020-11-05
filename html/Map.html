@@ -1,6 +1,7 @@
 <script src="../js/Map.js"></script>
+<script src="../js/modal.js"></script>
 <link rel="stylesheet" href="../css/Map.css">
-
+<link rel="stylesheet" href="../css/modal.css">
 <div class="dragdown">
 
     <div style="display: flex; flex-direction: row; width: 100%;">
@@ -76,6 +77,12 @@
                 <img class="caroussel" id="parcPicture0" src="../images/parc.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
         </div>
+        <button id="btnPopup" class="btnPopup">Fin de la partie</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                    <span id="btnClose" class="btnClose">&times;</span>
+                    <p>Votre score est de</p>
+            </div>
+        </div>
     </div>
 </div>
-
