@@ -135,19 +135,6 @@ body{
     width: 100%;
     padding-bottom: 3%;
 }
-.btnPopup {
-    border: 3px solid lightgreen;
-    background-color: whitesmoke;
-    border-radius: 25px;
-    height: 100px;
-    width: 15%;
-    left: 5%;
-    right: 15%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .game__title {
     font-family: Montserrat;
     font-size: 250%;

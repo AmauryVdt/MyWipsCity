@@ -19,15 +19,15 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 75%;
 }
 
 /* The Close Button */
 .btnClose {
     color: #aaaaaa;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+
 }
 
 .btnClose:hover,
@@ -35,4 +35,19 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+.btnModal {
+    border: 3px solid lightgreen;
+    background-color: whitesmoke;
+    border-radius: 25px;
+    height: 100px;
+    width: 15%;
+    left: 5%;
+    right: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btnModal>h5{
+    margin: auto;
 }
