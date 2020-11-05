@@ -6,11 +6,14 @@
 
     <div style="display: flex; flex-direction: row; width: 100%;">
         <div style="display: flex; justify-content: flex-end; width:70%;">
-            <h1 style="font-family: 'Montserrat', serif">Créer ta Wips City</h1>
+            <h1 style="font-family: 'Montserrat', serif">Crée ta Wips City</h1>
         </div>
-        <div style="display: flex; flex-direction: row; width:30%; margin-left: 15%; font-family: 'Montserrat', serif; font-weight: bold">
+        <div style="display: flex; flex-direction: row; width:20%; margin-left: 15%; margin-top:1%; font-family: 'Montserrat', serif; font-weight: bold">
             <h3>Score : </h3>
             <h3 id="score">&nbsp 0</h3>
+        </div>
+        <div onclick="window.location.reload();" style="display: flex; flex-direction: row; margin-top: 1%; width:10%;">
+            <img style="width: 2vw; height: 4.25vh;" src="../images/Icon__refresh.png">
         </div>
     </div>
 
@@ -101,7 +104,6 @@
                             <input type="text" class="form-control" id="userName" placeholder="Entrer votre nom">
                         </div>
                         <button  onclick="setScore(document.getElementById('userName').value)" class="btn btn-primary">Envoyer</button>
-                        </div>
                     </form>
                 </div>
             </div>
