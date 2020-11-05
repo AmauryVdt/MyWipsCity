@@ -1,5 +1,5 @@
 window.onload = addPicture();
-
+var countDrag = 0;
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -13,10 +13,12 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
     addPicture();
-
+    countDrag = countDrag + 1;
+    //document.getElementById("scoreBloc").innerHTML = countDrag ;    A rajouter lorsque l'on veut afficher le score dans un bloc
     if (ev.target === document.getElementById("trash")) {
         var img = document.getElementById(data);
         img.parentNode.removeChild(img);
+
     }
 }
 
@@ -35,8 +37,10 @@ function addPicture() {
     if (document.getElementById("commerce").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonPicture${countCommercePicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/magasin.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="150";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("commerce");
@@ -46,8 +50,10 @@ function addPicture() {
     else if (document.getElementById("maison").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonPicture${countMaisonPicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/maison.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="150";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("maison");
@@ -57,8 +63,10 @@ function addPicture() {
     else if (document.getElementById("appartement").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonAppartement${countAppartementPicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/immeuble.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="200";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("appartement");
@@ -68,8 +76,10 @@ function addPicture() {
     else if (document.getElementById("eoliene").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonEoliene${countEolienePicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/eolien.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="150";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("eoliene");
@@ -79,8 +89,10 @@ function addPicture() {
     else if (document.getElementById("hydraulique").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonHydraulique${countHydrauliquePicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/barragehydraulique.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="150";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("hydraulique");
@@ -90,8 +102,10 @@ function addPicture() {
     else if (document.getElementById("solaire").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonSolaire${countSolairePicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/solaire.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="150";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("solaire");
@@ -101,8 +115,10 @@ function addPicture() {
     else if (document.getElementById("ecole").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonEcole${countEcolePicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/ecole.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="150";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("ecole");
@@ -112,8 +128,10 @@ function addPicture() {
     else if (document.getElementById("industrie").childElementCount < 1) {
         const img = document.createElement("img");
         img.id = `maisonIndustrie${countIndustriePicture}`;
-        img.src = "../images/Aimez_la_Nature2.png";
+        img.src = "../images/usine.png";
         img.draggable = "true";
+        img.width="150";
+        img.height="150";
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("industrie");
