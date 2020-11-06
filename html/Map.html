@@ -1,7 +1,18 @@
 <script src="../js/Map.js"></script>
 <script src="../js/modal.js"></script>
+<head>
+    <script>
+        //$(document).ready(function(){
+          //  $('[data-toggle="popover"]').popover({
+            //    placement : 'top',
+              //  trigger : 'hover'
+            //});
+        //});
+    </script>
+</head>
 <link rel="stylesheet" href="../css/Map.css">
 <link rel="stylesheet" href="../css/modal.css">
+
 <div class="dragdown">
 
     <div style="display: flex; flex-direction: row; width: 100%;">
@@ -44,39 +55,39 @@
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div  class="bloc" id="commerce">
-                <img class="caroussel" id="commercePicture0" src="../images/magasin.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="commercePicture0" src="../images/magasin.png" data-toggle="popover"  draggable="true" ondragstart="drag(event)" width="150" height="150" title="Commerces" data-content="Les commerces permettent un bon rendement économique">
             </div>
             <hr class="separateur">
             <div class="bloc" id="maison">
-                <img class="caroussel" id="maisonPicture0" src="../images/maison.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="maisonPicture0" src="../images/maison.png"  data-toggle="popover" title="Maisons" data-content="Les maisons augmentent la population et donc l'economie" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="eoliene">
-                <img class="caroussel" id="eolienePicture0" src="../images/eolien.png" draggable="true" ondragstart="drag(event)"  width="150" height="150">
+                <img class="caroussel" id="eolienePicture0" src="../images/eolien.png"  data-toggle="popover" title="Eoliennes" data-content="Les éoliennes utilisent l'énergie du vent pour fournir de l'électricité" draggable="true" ondragstart="drag(event)"  width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="hydraulique">
-                <img class="caroussel" id="hydrauliquePicture0" src="../images/barragehydraulique.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="hydrauliquePicture0" src="../images/barragehydraulique.png" data-toggle="popover" title="Barrage hydraulique" data-content="Le barrage hydraulique utilise l'énergie de l'eau pour fournir de l'électricité" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="solaire">
-                <img class="caroussel" id="solairePicture0" src="../images/solaire.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="solairePicture0" src="../images/solaire.png" data-toggle="popover" title="Panneaux solaires" data-content="Les panneaux solaires utilisent l'énergie du soliel pour fournir de l'électricité" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="ecole">
-                <img class="caroussel" id="ecolePicture0" src="../images/ecole.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="ecolePicture0" src="../images/ecole.png" data-toggle="popover" title="Ecole" data-content="L'école est indispensable pour l'éducation de la population" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="industrie">
-                <img class="caroussel" id="industriePicture0" src="../images/usine.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="industriePicture0" src="../images/usine.png" data-toggle="popover" title="Industries" data-content="Les industires augmentent l'économie mais à un impact négatif sur l'écologie " draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="lac">
-                <img class="caroussel" id="lacPicture0" src="../images/Groupe%207365.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="lacPicture0" src="../images/Groupe%207365.png" data-toggle="popover" title="Lac" data-content="Le lac est important lors de l'utilisation d'un barrage hydraulique" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
             <hr class="separateur">
             <div class="bloc" id="parc">
-                <img class="caroussel" id="parcPicture0" src="../images/parc.png" draggable="true" ondragstart="drag(event)" width="150" height="150">
+                <img class="caroussel" id="parcPicture0" src="../images/parc.png" data-toggle="popover" title="Parc" data-content="Le parc augmente la satisfaction des habitants" draggable="true" ondragstart="drag(event)" width="150" height="150">
             </div>
         </div>
         <button id="btnModal" class="btnModal"> <h5>Valider</h5></button>
@@ -117,7 +128,7 @@
                             <!-- //Twitter -->
                         </div>
                     </form>
-                </div>
+            </div>
             </div>
         </div>
     </div>
