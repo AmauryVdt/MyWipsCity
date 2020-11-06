@@ -11,6 +11,17 @@ var countCommercePicture = 1,
     countParcPicture = 1;
 var blocks, ids = [];
 
+window.onload = popover();
+
+function popover() {
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover({
+            placement : 'top',
+            trigger : 'hover'
+        });
+    });
+}
+
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -24,11 +35,12 @@ function drop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
     addPicture();
-    countDrag = countDrag + 1;
     if (ev.target === document.getElementById("trash")) {
         var img = document.getElementById(data);
         img.parentNode.removeChild(img);
     }
+    $(document.getElementById(data)).popover('disable')
+    popover()
     updateScore();
 }
 
@@ -244,6 +256,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Commerce";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Les commerces permettent un bon rendement économique")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("commerce");
@@ -257,6 +272,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Maison";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Les maisons augmentent la population et donc l'economie")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("maison");
@@ -270,6 +288,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Eolienne";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Les éoliennes utilisent l'énergie du vent pour fournir de l'électricité")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("eoliene");
@@ -283,6 +304,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Barrage hydraulique";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Le barrage hydraulique utilise l'énergie de l'eau pour fournir de l'électricité")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("hydraulique");
@@ -296,6 +320,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Panneaux solaires";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Les panneaux solaires utilisent l'énergie du soliel pour fournir de l'électricité")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("solaire");
@@ -309,6 +336,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Ecole";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "L'école est indispensable pour l'éducation de la population")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("ecole");
@@ -322,6 +352,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Industries";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Les industires augmentent l'économie mais à un impact négatif sur l'écologie ")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("industrie");
@@ -335,6 +368,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Lac";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Le lac est important pour la biodiversité")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("lac");
@@ -348,6 +384,9 @@ function addPicture() {
         img.draggable = "true";
         img.width="150";
         img.height="150";
+        img.title="Parc";
+        img.setAttribute("data-toggle", "popover")
+        img.setAttribute("data-content", "Le parc augmente la satisfaction des habitants et est important pour la biodiversité")
         this.addEventListener('dragstart', function() {drag(event)}, false);
 
         const div = document.getElementById("parc");
